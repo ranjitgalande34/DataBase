@@ -94,7 +94,7 @@ namespace DataBase
         }
         static void EditRecord()
         {
-            string connectString = "server=DESKTOP=S5G37QB;database=practiceDB;integrated security=true";
+            string connectString = "server=DESKTOP-S5G37QB;database=practiceDB;integrated security=true";
             connection = new SqlConnection(connectString);
             command= new SqlCommand();
             command.CommandText = "update Student set marks=90 where id=1";
