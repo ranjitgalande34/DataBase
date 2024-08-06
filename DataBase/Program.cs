@@ -97,7 +97,7 @@ namespace DataBase
             string connectString = "server=DESKTOP-S5G37QB;database=practiceDB;integrated security=true";
             connection = new SqlConnection(connectString);
             command= new SqlCommand();
-            command.CommandText = "update Student set marks=90 where id=1";
+            command.CommandText = "update Student SET marks=90 where id=1";
             command.Connection = connection;
             connection.Open();
             command.ExecuteNonQuery();
